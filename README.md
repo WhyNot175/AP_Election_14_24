@@ -2,7 +2,7 @@
 
 A data analytics project tracing how an 11-point vote swing reshaped Andhra Pradesh's Legislative Assembly across three elections. Raw ECI results are cleaned and modeled in PostgreSQL, explored in Power BI, and shipped as a public, interactive web report.
 
-**Live site:** https://shaikshoaib-git.github.io/AP_Election_2014_24/web_page/
+**Live site:** https://[(https://whynot175.github.io/AP_Election_14_24/]
 
 ## What's inside
 
@@ -16,29 +16,6 @@ A data analytics project tracing how an 11-point vote swing reshaped Andhra Prad
 - **Seats to watch / outlook** — what the three-election trend suggests for 2029
 - **Spoiler-effect analysis** — constituencies where a residual Congress vote cost YSRCP the seat
 
-## Repository structure
-
-```
-├── data_set/
-│   ├── candidates.csv              # Raw candidate-level results (votes, party, constituency)
-│   ├── constituencies.csv          # Raw constituency-level results (winner, runner-up, margin)
-│   ├── clean_candidates.csv        # Cleaned/standardized candidate data
-│   └── clean_constituencies.csv    # Cleaned/standardized constituency data
-├── chart/
-│   ├── ap.pbix                     # Power BI dashboard
-│   └── clean_candidates_2019.pbix  # Power BI workbook (2019 cycle)
-├── web_page/                       # Static site deployed to GitHub Pages
-│   ├── index.html                  # Page markup + styling
-│   ├── script.js                   # Chart rendering and interactivity
-│   ├── data.js                     # Pre-parsed election data embedded for offline use
-│   ├── candidates_detail.json
-│   ├── grid_map.json               # Constituency-to-map-grid layout
-│   ├── summary.json / transitions.json / ysrcp_analysis.json
-│   └── candidates.csv / standings.csv
-├── clean..ipynb                    # Jupyter notebook: cleaning/standardizing raw CSVs with pandas
-├── election_db.sql                 # PostgreSQL schema (candidates, constituencies tables)
-├── seat_won_parties.sql            # Analysis queries (seats per party, margins, closest contests)
-└── .github/workflows/static.yml    # GitHub Actions workflow — auto-deploys web_page/ to GitHub Pages
 ```
 
 ## Tech stack
@@ -54,8 +31,8 @@ A data analytics project tracing how an 11-point vote swing reshaped Andhra Prad
 The web report has no build step or backend — open it directly in a browser:
 
 ```bash
-git clone https://github.com/SHAIKSHOAIB-GIT/AP_Election_2014_24.git
-cd AP_Election_2014_24/web_page
+git clone https://github.com/WhyNot175/AP_Election_14_24/
+cd AP_Election_14_24
 open index.html   # or just double-click the file
 ```
 
